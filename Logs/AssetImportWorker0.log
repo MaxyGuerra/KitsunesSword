@@ -520,3 +520,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4153.003437 seconds.
+  path: Assets/Modelos/ProtaEspadaRig.fbx
+  artifactKey: Guid(99c6a58d6e8915841895febdae04be3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/ProtaEspadaRig.fbx using Guid(99c6a58d6e8915841895febdae04be3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1047a0bc480db95776660db8dbad2f53') in 0.590177 seconds 
+  Import took 0.597109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 397.868591 seconds.
+  path: Assets/Modelos/ProtaEspada.fbx
+  artifactKey: Guid(6d26bf2af2b00be419e1b64c46c6a29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modelos/ProtaEspada.fbx using Guid(6d26bf2af2b00be419e1b64c46c6a29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df88c807ca6593f9c2e31518e68245b') in 0.280040 seconds 
+  Import took 0.286828 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
