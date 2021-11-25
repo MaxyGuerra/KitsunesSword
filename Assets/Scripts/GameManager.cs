@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
 
     private AudioSource audioSource;
     private float[] samples = new float[512];
-    public float[] frequencyBand = new float[8];
-    public float[] frecuencyForSpawn = new float[6];
+    private float[] frequencyBand = new float[8];
+    private float[] frecuencyForSpawn = new float[6];
 
     public float timer;
     public float spawnDelay;
@@ -24,9 +24,13 @@ public class GameManager : MonoBehaviour
 
     public float songDelay;
     public AudioSource audioCamara;
+
+    public Animator Animator;
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        Animator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -123,6 +127,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SongDelay()
     {
+        audioCamara.clip = audioSource.clip;
         yield return new WaitForSeconds(songDelay);
         audioCamara.Play();
     }
