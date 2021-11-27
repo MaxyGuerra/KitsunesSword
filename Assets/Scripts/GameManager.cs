@@ -1,10 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum EGameStates { Waiting, Gameplay, Pause, RoundOver, Gameover}
 [RequireComponent(typeof(AudioSource))]
 public class GameManager : MonoBehaviour
 {
+    public EGameStates gameStates;
+
+    //Evento cambio de estados
+    public delegate void FnotifyGameState(EGameStates gameStates);
+    public static event FnotifyGameState OnGameStateChange;
+
+    public bool bTimeIsRunnig;
+    public bool bOnGameplay;
+
+    public int blancoInicioCont = 2;
+
+    //singleton
+    private static GameManager instance;
+    public static GameManager Instance { get { return instance; } }
+
     public Transform derechaArriba;
     public Transform izquierdaArriba;
     public Transform derechaMedio;
@@ -17,7 +32,7 @@ public class GameManager : MonoBehaviour
     private float[] frequencyBand = new float[8];
     private float[] frecuencyForSpawn = new float[6];
 
-    public float timer;
+    private float timer;
     public float spawnDelay;
     public GameObject PrefabBlanco;
     private GameObject ultimoBlanco;
@@ -27,16 +42,20 @@ public class GameManager : MonoBehaviour
 
     public Animator Animator;
 
+    public GameObject Bereficador1;
+    public GameObject Bereficador2;
+
     private void Awake()
     {
+        instance=this;
         audioSource = GetComponent<AudioSource>();
-        Animator = GetComponent<Animator>();
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("SongDelay");
+        ChangeGameState(EGameStates.Waiting);
     }
 
     void GetAudioSamples()
@@ -64,7 +83,6 @@ public class GameManager : MonoBehaviour
             }
             average /= count;
             frequencyBand[i] = average;
-
         }
     }
 
@@ -132,18 +150,73 @@ public class GameManager : MonoBehaviour
         audioCamara.Play();
     }
 
+    void StartGame()
+    {
+        StartCoroutine("SongDelay");
+        ChangeGameState(EGameStates.Gameplay);
+        audioSource.Play();
+        //Debug.Log(audioSource.clip);
+    }
+
+    public void ChangeGameState(EGameStates NewGameStates)
+    {
+        gameStates = NewGameStates;
+        OnGameStateChange?.Invoke(gameStates);
+
+        switch (gameStates)
+        {
+            case EGameStates.Waiting:
+                bTimeIsRunnig = true;
+                bOnGameplay = false;
+                break;
+            case EGameStates.Gameplay:
+                bTimeIsRunnig = true;
+                bOnGameplay = true;
+                //Debug.Log("gameplay");
+                break;
+            case EGameStates.Pause:
+                bTimeIsRunnig = false;
+                bOnGameplay = false;
+                break;
+            case EGameStates.RoundOver:
+                bTimeIsRunnig = false;
+                bOnGameplay = false;
+                break;
+            case EGameStates.Gameover:
+                bTimeIsRunnig = false;
+                bOnGameplay = false;
+                break;
+        }
+    }
+
+    public void UpdateWaitingState()
+    {
+        if(blancoInicioCont == 0) return;
+
+        blancoInicioCont--;
+
+        if(blancoInicioCont == 0)
+        {
+            StartGame();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if(timer >= spawnDelay)
-        {
-            SpawnBlancos();
-            timer = 0;
-        }
-
         GetAudioSamples();
         MakeFrequencyBands();
+
+        if (bOnGameplay == true)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= spawnDelay)
+            {
+                SpawnBlancos();
+                timer = 0;
+            }
+        }
+        
     }
 }
