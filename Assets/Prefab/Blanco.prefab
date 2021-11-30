@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8138681925210174738}
   m_Layer: 0
   m_Name: Blanco
-  m_TagString: Untagged
+  m_TagString: Blancos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 3116873282094555975}
   Velocidad: 1
+  bCanMove: 0
 --- !u!1001 &4591472378295237916
 PrefabInstance:
   m_ObjectHideFlags: 0

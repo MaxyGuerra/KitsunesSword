@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Blanco : MonoBehaviour
 {
+    public delegate void FEventosPuntos();
+    public static event FEventosPuntos OnEventosPuntos;
+
     public GameObject Prefab;
     public float Velocidad;
 
@@ -41,6 +44,7 @@ public class Blanco : MonoBehaviour
     {
         if(other.CompareTag("Defensa"))
         {
+
             Destroy(gameObject);
         }
     }

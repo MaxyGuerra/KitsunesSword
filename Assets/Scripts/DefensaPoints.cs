@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DefensaPoints : MonoBehaviour
 {
@@ -11,6 +12,18 @@ public class DefensaPoints : MonoBehaviour
     public GameObject DefensaDerechaBaja;
     public GameObject DefensaIzquierdaBaja;
 
+    public float vida;
+    public GameObject barraDeVida;
+    Image barraUI;
+
+    public int puntaje;
+    public int combo;
+
+    private void Awake()
+    {
+        barraUI = barraDeVida.GetComponent<Image>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +33,26 @@ public class DefensaPoints : MonoBehaviour
         DefensaIzquierdaMedia.SetActive(false);
         DefensaDerechaBaja.SetActive(false);
         DefensaIzquierdaBaja.SetActive(false);
+
+        vida = 1f;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Blancos"))
+        {
+            vida = vida - 0.2f;
+            Destroy(other.gameObject);
+            combo = 0;
+        }
+    }
+
+    void CuraPorCombo()
+    {
+        if(combo >= 15)
+        {
+            vida = vida + 0.2f;
+        }
     }
 
     void InputDefensa()
@@ -82,6 +115,13 @@ public class DefensaPoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        barraUI.fillAmount = vida;
+        CuraPorCombo();
         InputDefensa();
+
+        if(vida <= 0)
+        {
+            GameManager.Instance.ChangeGameState(EGameStates.Gameover);
+        }
     }
 }
