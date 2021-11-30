@@ -42,9 +42,6 @@ public class GameManager : MonoBehaviour
 
     public Animator Animator;
 
-    public GameObject Bereficador1;
-    public GameObject Bereficador2;
-
     private void Awake()
     {
         instance=this;
@@ -172,11 +169,12 @@ public class GameManager : MonoBehaviour
             case EGameStates.Gameplay:
                 bTimeIsRunnig = true;
                 bOnGameplay = true;
-                //Debug.Log("gameplay");
+                Debug.Log("gameplay");
                 break;
             case EGameStates.Pause:
                 bTimeIsRunnig = false;
                 bOnGameplay = false;
+                Debug.Log("pausa");
                 break;
             case EGameStates.RoundOver:
                 bTimeIsRunnig = false;
@@ -215,6 +213,23 @@ public class GameManager : MonoBehaviour
             {
                 SpawnBlancos();
                 timer = 0;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            switch (gameStates)
+            {
+                case EGameStates.Gameplay:
+                    ChangeGameState(EGameStates.Pause);
+                    audioSource.Pause();
+                    audioCamara.Pause();
+                    break;
+                case EGameStates.Pause:
+                    ChangeGameState(EGameStates.Gameplay);
+                    audioSource.UnPause();
+                    audioCamara.UnPause();
+                    break;
             }
         }
         
