@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DefensaPoints : MonoBehaviour
 {
@@ -16,8 +17,29 @@ public class DefensaPoints : MonoBehaviour
     public GameObject barraDeVida;
     Image barraUI;
 
+    public TextMeshProUGUI textPuntaje;
     public int puntaje;
+    public TextMeshProUGUI textCombo;
     public int combo;
+
+    private void OnEnable()
+    {
+        Blanco.OnEventosPuntos += Blanco_OnEventosPuntos;
+    }
+
+    private void OnDisable()
+    {
+        Blanco.OnEventosPuntos -= Blanco_OnEventosPuntos;
+    }
+
+    private void Blanco_OnEventosPuntos()
+    {
+        puntaje = puntaje + 50;
+        if(combo < 15)
+        {
+            combo++;
+        }
+    }
 
     private void Awake()
     {
@@ -43,15 +65,23 @@ public class DefensaPoints : MonoBehaviour
         {
             vida = vida - 0.2f;
             Destroy(other.gameObject);
-            combo = 0;
+            if (combo < 15)
+            {
+                combo = 0;
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
     void CuraPorCombo()
     {
-        if(combo >= 15)
+        if(combo >= 15 && vida < 1)
         {
             vida = vida + 0.2f;
+            combo = 0;
         }
     }
 
@@ -118,6 +148,9 @@ public class DefensaPoints : MonoBehaviour
         barraUI.fillAmount = vida;
         CuraPorCombo();
         InputDefensa();
+
+        textPuntaje.SetText("Puntaje: "+ puntaje);
+        textCombo.SetText("Combo x"+ combo);
 
         if(vida <= 0)
         {

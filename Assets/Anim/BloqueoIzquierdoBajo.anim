@@ -318,7 +318,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.083333336
-        value: {x: -143.98, y: -14.812012, z: 51.628998}
+        value: {x: -142.99, y: -13.002014, z: 63.991997}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -343,7 +343,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.083333336
-        value: {x: -145.479, y: 10.923996, z: -47.27002}
+        value: {x: -137.648, y: 15.595993, z: -52.514008}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -368,7 +368,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.083333336
-        value: {x: 1.207, y: 2.671, z: 116.302}
+        value: {x: 16.406, y: -31.403, z: 110.882}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -393,7 +393,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.083333336
-        value: {x: 1.734, y: -1.911, z: -115.107}
+        value: {x: 1.734, y: -1.911, z: -113.589}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -2246,7 +2246,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: -143.98
+        value: -142.99
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2274,7 +2274,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: -14.812012
+        value: -13.002014
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2302,7 +2302,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 51.628998
+        value: 63.991997
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2330,7 +2330,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: -145.479
+        value: -137.648
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2358,7 +2358,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 10.923996
+        value: 15.595993
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2386,7 +2386,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: -47.27002
+        value: -52.514008
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2414,7 +2414,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 1.207
+        value: 16.406
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2442,7 +2442,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 2.671
+        value: -31.403
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2470,7 +2470,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 116.302
+        value: 110.882
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2554,7 +2554,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: -115.107
+        value: -113.589
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2576,7 +2576,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2586,7 +2586,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2596,7 +2596,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3086,7 +3086,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
+    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3096,7 +3096,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
+    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3106,7 +3106,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.R/BordeExteriorGabardina.R
+    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3176,7 +3176,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3186,7 +3186,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3196,7 +3196,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Rig 1/IkManoIzquierda/IKAimManoIzquierda
+    path: ArmatureMan.001/Root/Main/Homoplatos/Esmpalda/EspaldaBaja/Cadera.L/BordeInteriorGabardina.L
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

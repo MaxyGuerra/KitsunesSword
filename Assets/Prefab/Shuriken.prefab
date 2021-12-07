@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3847745726737768486}
   - component: {fileID: 201021303211454339}
   - component: {fileID: 2679321298565634889}
+  - component: {fileID: -2529164993609201705}
+  - component: {fileID: 2404236153016481872}
+  - component: {fileID: 1298941970537910207}
   m_Layer: 0
   m_Name: Shuriken
   m_TagString: Untagged
@@ -81,3 +84,145 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2529164993609201705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480554923276843676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa88fb2d62762694baa3970c951362a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r1: 0
+  r2: 0
+  r3: 200
+  clips:
+  - {fileID: 8300000, guid: 071b172054fedf048bbfb6981642b430, type: 3}
+  - {fileID: 8300000, guid: 8472e5fa43f4e574aa61a6e1955e4e75, type: 3}
+  - {fileID: 8300000, guid: f972f53fa2669154e85a0af25c3ee4a8, type: 3}
+  - {fileID: 8300000, guid: 5ab9c030bd404534b9940f50531931ef, type: 3}
+  - {fileID: 8300000, guid: 7b8eb4dc0e3d8eb429fcf042be92bf89, type: 3}
+  - {fileID: 8300000, guid: 3333d753b0b924c43aa4f3e8b4c2864a, type: 3}
+  - {fileID: 8300000, guid: 206d3b86dc16a9144a146f7f2d951543, type: 3}
+  - {fileID: 8300000, guid: 55474700ed3285448a6b592c59a02291, type: 3}
+  - {fileID: 8300000, guid: da846d610d6636a468dd7b28ecc0b171, type: 3}
+  - {fileID: 8300000, guid: b589643bff123484bb9cd1d26b468e61, type: 3}
+  - {fileID: 8300000, guid: 776d673b67d323643b900e4d05c9713b, type: 3}
+--- !u!82 &2404236153016481872
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480554923276843676}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!95 &1298941970537910207
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480554923276843676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55e03aee8eb34c341b5e9ae560818220, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

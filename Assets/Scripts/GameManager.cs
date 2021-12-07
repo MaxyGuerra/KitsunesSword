@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 public enum EGameStates { Waiting, Gameplay, Pause, RoundOver, Gameover}
 [RequireComponent(typeof(AudioSource))]
+
 public class GameManager : MonoBehaviour
 {
     public EGameStates gameStates;
@@ -35,6 +39,7 @@ public class GameManager : MonoBehaviour
     private float timer;
     public float spawnDelay;
     public GameObject PrefabBlanco;
+    public float velocidadBlancos;
     private GameObject ultimoBlanco;
 
     public float songDelay;
@@ -106,35 +111,53 @@ public class GameManager : MonoBehaviour
         {
             if(frecuencyForSpawn[j] == valorMaximo)
             {
-                if(frecuencyForSpawn[j] == frecuencyForSpawn[0])
+                /////////////////////////1/////////////////////////
+                if (frecuencyForSpawn[j] == frecuencyForSpawn[0])
                 {
                     ultimoBlanco = Instantiate(PrefabBlanco, derechaArriba.position,Quaternion.identity);
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
-                    setVelocidad.Velocidad = -1f;
+                    setVelocidad.velocidad = (velocidadBlancos * -1f);
+                    setVelocidad.AnnadirComplemento();
                 }
+                /////////////////////////2/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[1])
                 {
-                    Instantiate(PrefabBlanco, izquierdaArriba.position, Quaternion.identity);
+                    ultimoBlanco = Instantiate(PrefabBlanco, izquierdaArriba.position, Quaternion.identity);
+                    Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
+                    setVelocidad.velocidad = velocidadBlancos;
+                    setVelocidad.AnnadirComplemento();
                 }
+                /////////////////////////3/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[2])
                 {
                     ultimoBlanco = Instantiate(PrefabBlanco, derechaMedio.position, Quaternion.identity);
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
-                    setVelocidad.Velocidad = -1f;
+                    setVelocidad.velocidad = (velocidadBlancos * -1f);
+                    setVelocidad.AnnadirComplemento();
                 }
+                /////////////////////////4/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[3])
                 {
-                    Instantiate(PrefabBlanco, izquierdaMedio.position, Quaternion.identity);
+                    ultimoBlanco = Instantiate(PrefabBlanco, izquierdaMedio.position, Quaternion.identity);
+                    Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
+                    setVelocidad.velocidad = velocidadBlancos;
+                    setVelocidad.AnnadirComplemento();
                 }
+                /////////////////////////5/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[4])
                 {
                     ultimoBlanco = Instantiate(PrefabBlanco, derechaBajo.position, Quaternion.identity);
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
-                    setVelocidad.Velocidad = -1f;
+                    setVelocidad.velocidad = (velocidadBlancos * -1f);
+                    setVelocidad.AnnadirComplemento();
                 }
+                /////////////////////////6/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[5])
                 {
-                    Instantiate(PrefabBlanco, izquierdaBajo.position, Quaternion.identity);
+                    ultimoBlanco = Instantiate(PrefabBlanco, izquierdaBajo.position, Quaternion.identity);
+                    Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
+                    setVelocidad.velocidad = velocidadBlancos;
+                    setVelocidad.AnnadirComplemento();
                 }
             }
         }
@@ -169,12 +192,12 @@ public class GameManager : MonoBehaviour
             case EGameStates.Gameplay:
                 bTimeIsRunnig = true;
                 bOnGameplay = true;
-                Debug.Log("gameplay");
+                //Debug.Log("gameplay");
                 break;
             case EGameStates.Pause:
                 bTimeIsRunnig = false;
                 bOnGameplay = false;
-                Debug.Log("pausa");
+                //Debug.Log("pausa");
                 break;
             case EGameStates.RoundOver:
                 bTimeIsRunnig = false;
