@@ -5,26 +5,27 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Complemento : MonoBehaviour
 {
-    public float r1;
-    public float r2;
-    public float r3;
     public AudioClip[] clips;
     AudioSource audioSource;
     private int selector;
     Animator anim;
-    bool bAnim = true;
+    public GameObject objParticulas;
+    ParticleSystem particles;
     public void HacerSonido()
     {
-        bAnim =false;
         audioSource = GetComponent<AudioSource>();
+        particles = objParticulas.GetComponent<ParticleSystem>();
         anim = GetComponent<Animator>();
+
         if(transform.position.x <= 0)
         {
             anim.SetBool("Derecha",true);
+            particles.Play();
         }
         else if(transform.position.x >= 0)
         {
             anim.SetBool("Izquierda", true);
+            particles.Play();
         }
         selector = Random.Range(0,clips.Length);
         audioSource.clip = clips[selector];
@@ -33,13 +34,5 @@ public class Complemento : MonoBehaviour
     void DestruirComplemento()
     {
         Destroy(gameObject);
-    }
-
-    void Update()
-    {
-        if(bAnim == true)
-        {
-            transform.Rotate(r1 * Time.deltaTime, r2 * Time.deltaTime, r3 * Time.deltaTime);
-        }
     }
 }

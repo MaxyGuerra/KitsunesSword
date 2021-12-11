@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     private float timer;
     public float spawnDelay;
+    float delayForSpawn;
     public GameObject PrefabBlanco;
     public float velocidadBlancos;
     private GameObject ultimoBlanco;
@@ -232,10 +233,17 @@ public class GameManager : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer >= spawnDelay)
+            delayForSpawn = Random.Range((spawnDelay-0.5f),(spawnDelay+0.5f));
+
+            if (timer >= delayForSpawn)
             {
                 SpawnBlancos();
                 timer = 0;
+            }
+
+            if(!audioSource.isPlaying)
+            {
+                ChangeGameState(EGameStates.RoundOver);
             }
         }
 

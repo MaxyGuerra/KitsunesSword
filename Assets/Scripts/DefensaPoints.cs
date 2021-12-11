@@ -34,7 +34,7 @@ public class DefensaPoints : MonoBehaviour
 
     private void Blanco_OnEventosPuntos()
     {
-        puntaje = puntaje + 50;
+        puntaje++;
         if(combo < 15)
         {
             combo++;

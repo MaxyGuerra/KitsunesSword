@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -457,6 +457,82 @@ Transform:
   m_Father: {fileID: 808472388}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &238667453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238667454}
+  - component: {fileID: 238667456}
+  - component: {fileID: 238667455}
+  m_Layer: 5
+  m_Name: BarraDeVida (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &238667454
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238667453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.41, y: 0.5, z: 1}
+  m_Children:
+  - {fileID: 2119638861}
+  m_Father: {fileID: 1698882572}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -460}
+  m_SizeDelta: {x: 1600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &238667455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238667453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9efb7b2b179b0614bb0c174c846727c4, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &238667456
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238667453}
+  m_CullTransparentMesh: 1
 --- !u!1 &255958620
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +545,7 @@ GameObject:
   - component: {fileID: 255958624}
   - component: {fileID: 255958623}
   - component: {fileID: 255958622}
+  - component: {fileID: 255958625}
   m_Layer: 5
   m_Name: BotonDefensaDerechaBaja
   m_TagString: Untagged
@@ -492,7 +569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 920, y: -244}
+  m_AnchoredPosition: {x: -920, y: -244}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255958622
@@ -538,7 +615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255958623}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 255958625}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255958623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,6 +666,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255958620}
   m_CullTransparentMesh: 1
+--- !u!114 &255958625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255958620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 1066619037}
+  boolforAnim: BloqueoDerechoBajo
 --- !u!1 &324743257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1437,7 @@ GameObject:
   - component: {fileID: 510038115}
   - component: {fileID: 510038114}
   - component: {fileID: 510038113}
+  - component: {fileID: 510038116}
   m_Layer: 5
   m_Name: BotonDefensaIzquierdaAlta
   m_TagString: Untagged
@@ -1357,7 +1461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -920, y: 274}
+  m_AnchoredPosition: {x: 920, y: 274}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &510038113
@@ -1403,7 +1507,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510038114}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 510038116}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &510038114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,6 +1558,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510038111}
   m_CullTransparentMesh: 1
+--- !u!114 &510038116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510038111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 509655337}
+  boolforAnim: BloqueoIzquierdoAlto
 --- !u!1 &553346739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1710,7 @@ GameObject:
   - component: {fileID: 673719816}
   - component: {fileID: 673719815}
   - component: {fileID: 673719814}
+  - component: {fileID: 673719817}
   m_Layer: 5
   m_Name: BotonDefensaIzquierdaMedia
   m_TagString: Untagged
@@ -1603,7 +1734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -920, y: 12}
+  m_AnchoredPosition: {x: 920, y: 12}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &673719814
@@ -1649,7 +1780,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 673719815}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 673719817}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &673719815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,6 +1831,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673719812}
   m_CullTransparentMesh: 1
+--- !u!114 &673719817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673719812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 324743257}
+  boolforAnim: BloqueoIzquierdoMedio
 --- !u!1 &764903802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1857,7 @@ GameObject:
   - component: {fileID: 764903806}
   - component: {fileID: 764903805}
   - component: {fileID: 764903804}
+  - component: {fileID: 764903807}
   m_Layer: 5
   m_Name: BotonDefensaDerechaMedia
   m_TagString: Untagged
@@ -1723,7 +1881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 920, y: 12}
+  m_AnchoredPosition: {x: -920, y: 12}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764903804
@@ -1769,7 +1927,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764903805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764903807}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764903805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1808,6 +1978,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764903802}
   m_CullTransparentMesh: 1
+--- !u!114 &764903807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764903802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 2058430678}
+  boolforAnim: BloqueoDerechoMedio
 --- !u!1 &784640388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +2022,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.13052616, w: 0.9914449}
   m_LocalPosition: {x: 0.6, y: 2.26, z: 0.175}
   m_LocalScale: {x: 0.20000003, y: 0.6, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1464967820}
   m_Father: {fileID: 1235467275}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
@@ -2021,16 +2206,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875069743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1698882572}
-  m_RootOrder: 6
+  m_Father: {fileID: 2119638861}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -460}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875069745
@@ -2225,6 +2410,7 @@ GameObject:
   - component: {fileID: 1073977779}
   - component: {fileID: 1073977778}
   - component: {fileID: 1073977777}
+  - component: {fileID: 1073977780}
   m_Layer: 5
   m_Name: BotonDefensaIzquierdaBaja
   m_TagString: Untagged
@@ -2248,7 +2434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -920, y: -244}
+  m_AnchoredPosition: {x: 920, y: -244}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073977777
@@ -2294,7 +2480,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1073977778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1073977780}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1073977778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2333,6 +2531,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073977775}
   m_CullTransparentMesh: 1
+--- !u!114 &1073977780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073977775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 1609494525}
+  boolforAnim: BloquoIzquierdoBajo
 --- !u!1 &1081432489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3291,6 +3503,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!1 &1464967819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464967820}
+  m_Layer: 0
+  m_Name: Partticuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464967820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464967819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 784640389}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505617022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,6 +4192,7 @@ GameObject:
   - component: {fileID: 1626378428}
   - component: {fileID: 1626378427}
   - component: {fileID: 1626378426}
+  - component: {fileID: 1626378429}
   m_Layer: 5
   m_Name: BotonDefensaDerechaAlta
   m_TagString: Untagged
@@ -3973,7 +4216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 920, y: 274}
+  m_AnchoredPosition: {x: -920, y: 274}
   m_SizeDelta: {x: 260, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626378426
@@ -4019,7 +4262,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1626378427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1626378429}
+        m_TargetAssemblyTypeName: BotonUISetActive, Assembly-CSharp
+        m_MethodName: ActivarObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1626378427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4058,6 +4313,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626378424}
   m_CullTransparentMesh: 1
+--- !u!114 &1626378429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626378424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1358449cc153a7449e18b5da09facb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defensa: {fileID: 784640388}
+  boolforAnim: BloqueoDerechoAlto
 --- !u!1 &1667245926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,7 +4485,7 @@ RectTransform:
   - {fileID: 673719813}
   - {fileID: 255958621}
   - {fileID: 1073977776}
-  - {fileID: 875069744}
+  - {fileID: 238667454}
   - {fileID: 141111898}
   - {fileID: 1389779576}
   m_Father: {fileID: 0}
@@ -5147,6 +5416,82 @@ Transform:
   m_Father: {fileID: 1081432492}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2119638860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119638861}
+  - component: {fileID: 2119638863}
+  - component: {fileID: 2119638862}
+  m_Layer: 5
+  m_Name: BarraDeVida (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2119638861
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119638860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9756098, y: 0.8, z: 1}
+  m_Children:
+  - {fileID: 875069744}
+  m_Father: {fileID: 238667454}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2119638862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119638860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9efb7b2b179b0614bb0c174c846727c4, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2119638863
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119638860}
+  m_CullTransparentMesh: 1
 --- !u!4 &23935873231665405
 Transform:
   m_ObjectHideFlags: 0
