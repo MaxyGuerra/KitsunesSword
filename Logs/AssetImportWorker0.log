@@ -320,3 +320,132 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11088.670618 seconds.
+  path: Assets/Materiales/M_Techo.mat
+  artifactKey: Guid(a01d16b4bcb14f241b383364841b35bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiales/M_Techo.mat using Guid(a01d16b4bcb14f241b383364841b35bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455a49ff3f2f9bf7f18fbc27b59e7b14') in 0.488783 seconds 
+  Import took 0.495015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.975799 seconds.
+  path: Assets/MyScenes/MainMenu.unity
+  artifactKey: Guid(d54549b8509cf5641bda49a983602658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/MainMenu.unity using Guid(d54549b8509cf5641bda49a983602658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5dc3b036a641adc87f7fc21c59a40f0') in 0.005748 seconds 
+  Import took 0.010985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 219.728493 seconds.
+  path: Assets/Sprites/MenuPrincipal.jpg
+  artifactKey: Guid(8aa0707c61cd7d3498ac16cc8b64f169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuPrincipal.jpg using Guid(8aa0707c61cd7d3498ac16cc8b64f169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a305a7d94f1521098ed421ee751f8175') in 0.022139 seconds 
+  Import took 0.027724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.704908 seconds.
+  path: Assets/Sprites/MenuPrincipal.jpg
+  artifactKey: Guid(8aa0707c61cd7d3498ac16cc8b64f169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuPrincipal.jpg using Guid(8aa0707c61cd7d3498ac16cc8b64f169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2a7ca8c32882abdb3db0c71f65a616') in 0.025500 seconds 
+  Import took 0.030955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3788.130805 seconds.
+  path: Assets/Sprites/MenuDerrota.png
+  artifactKey: Guid(0e16e9e9590f5584c8bbcd7e75f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuDerrota.png using Guid(0e16e9e9590f5584c8bbcd7e75f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd21225c70957261f41ea660cce205af') in 0.016909 seconds 
+  Import took 0.023410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Sprites/MenuVictoria.png
+  artifactKey: Guid(2db0d831d03fcf142a4dcd44a2446777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuVictoria.png using Guid(2db0d831d03fcf142a4dcd44a2446777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3293702b85cc889f3cbbd5fbdccbff') in 0.009637 seconds 
+  Import took 0.015485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.391194 seconds.
+  path: Assets/Sprites/MenuDerrota.png
+  artifactKey: Guid(0e16e9e9590f5584c8bbcd7e75f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuDerrota.png using Guid(0e16e9e9590f5584c8bbcd7e75f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c80e1d034644a553e561ea73d58988c') in 0.023725 seconds 
+  Import took 0.029101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.341224 seconds.
+  path: Assets/Sprites/MenuVictoria.png
+  artifactKey: Guid(2db0d831d03fcf142a4dcd44a2446777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuVictoria.png using Guid(2db0d831d03fcf142a4dcd44a2446777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef374e3e79afd6fe3e72f72b854fff1b') in 0.010883 seconds 
+  Import took 0.016668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.022527 seconds.
+  path: Assets/Sprites/Capa2.png
+  artifactKey: Guid(a7e0c84e3e38b9f4596bd5b9b86a70c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Capa2.png using Guid(a7e0c84e3e38b9f4596bd5b9b86a70c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0607a459b2a66ab4e586c334765cc351') in 0.014584 seconds 
+  Import took 0.020812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Sprites/Capa3.png
+  artifactKey: Guid(9d656c8d5f831fa4ea60e5942cb5ca57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Capa3.png using Guid(9d656c8d5f831fa4ea60e5942cb5ca57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ad2d9c5200cb3752401072194a2737') in 0.008712 seconds 
+  Import took 0.013879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.480094 seconds.
+  path: Assets/Sprites/Capa2.png
+  artifactKey: Guid(a7e0c84e3e38b9f4596bd5b9b86a70c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Capa2.png using Guid(a7e0c84e3e38b9f4596bd5b9b86a70c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5fe645fd56d984d07333c22a049f1bd') in 0.028999 seconds 
+  Import took 0.034232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.294954 seconds.
+  path: Assets/Sprites/Capa3.png
+  artifactKey: Guid(9d656c8d5f831fa4ea60e5942cb5ca57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Capa3.png using Guid(9d656c8d5f831fa4ea60e5942cb5ca57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd293f3c04199c3c3392746a51c425a') in 0.011319 seconds 
+  Import took 0.016482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.939720 seconds.
+  path: Assets/MyScenes/lvl2.unity
+  artifactKey: Guid(c85a2cee3eeadc44ca468a1a04ccc12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/lvl2.unity using Guid(c85a2cee3eeadc44ca468a1a04ccc12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86951773af2ea6947e452230958d75e8') in 0.001970 seconds 
+  Import took 0.008226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2662.214050 seconds.
+  path: Assets/Sprites/MenuPausa.png
+  artifactKey: Guid(9ac6dbdef10dfb94c8acddccaf737859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuPausa.png using Guid(9ac6dbdef10dfb94c8acddccaf737859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f9d745b0b56e407fd92795deed00e6') in 0.013660 seconds 
+  Import took 0.019883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.155392 seconds.
+  path: Assets/Sprites/MenuPausa.png
+  artifactKey: Guid(9ac6dbdef10dfb94c8acddccaf737859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MenuPausa.png using Guid(9ac6dbdef10dfb94c8acddccaf737859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f433de56fd20ac020c61c1f8245bc0') in 0.039855 seconds 
+  Import took 0.045459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.550997 seconds.
+  path: Assets/MyScenes/lvl1.unity
+  artifactKey: Guid(2c10266d9af496a4db7ba6581750e67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/lvl1.unity using Guid(2c10266d9af496a4db7ba6581750e67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2199bb592982420f8dcc5f0380a71a86') in 0.004845 seconds 
+  Import took 0.010174 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
