@@ -65,14 +65,6 @@ public class DefensaPoints : MonoBehaviour
         {
             vida = vida - 0.2f;
             Destroy(other.gameObject);
-            if (combo < 15)
-            {
-                combo = 0;
-            }
-            else
-            {
-                return;
-            }
         }
     }
 
