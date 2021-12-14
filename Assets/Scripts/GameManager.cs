@@ -42,12 +42,16 @@ public class GameManager : MonoBehaviour
     public GameObject PrefabBlanco;
     public float velocidadBlancos;
     private GameObject ultimoBlanco;
-
+    public int puntajeMaximo;
+    public DefensaPoints defensaPoints;
+    public TextMeshProUGUI puntajeMaximoUI;
+    public GameObject capa1;
+    public GameObject capa2;
     public float songDelay;
     public AudioSource audioCamara;
 
     public Animator Animator;
-
+    
     private void Awake()
     {
         instance=this;
@@ -59,6 +63,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ChangeGameState(EGameStates.Waiting);
+        puntajeMaximo = 0;
     }
 
     void GetAudioSamples()
@@ -119,6 +124,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = (velocidadBlancos * -1f);
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
                 /////////////////////////2/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[1])
@@ -127,6 +133,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = velocidadBlancos;
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
                 /////////////////////////3/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[2])
@@ -135,6 +142,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = (velocidadBlancos * -1f);
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
                 /////////////////////////4/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[3])
@@ -143,6 +151,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = velocidadBlancos;
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
                 /////////////////////////5/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[4])
@@ -151,6 +160,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = (velocidadBlancos * -1f);
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
                 /////////////////////////6/////////////////////////
                 else if (frecuencyForSpawn[j] == frecuencyForSpawn[5])
@@ -159,6 +169,7 @@ public class GameManager : MonoBehaviour
                     Blanco setVelocidad = ultimoBlanco.GetComponent<Blanco>();
                     setVelocidad.velocidad = velocidadBlancos;
                     setVelocidad.AnnadirComplemento();
+                    puntajeMaximo++;
                 }
             }
         }
@@ -223,6 +234,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void GanasteElNivel()
+    {
+        puntajeMaximoUI.SetText(defensaPoints.puntaje+"/"+(puntajeMaximo-1));
+        if(defensaPoints.puntaje >= ((puntajeMaximo-1)/3))
+        {
+            capa1.SetActive(true);
+        }
+        if (defensaPoints.puntaje >= ((puntajeMaximo-1) / 3) * 2)
+        {
+            capa2.SetActive(true);
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -244,6 +269,7 @@ public class GameManager : MonoBehaviour
             if(!audioSource.isPlaying)
             {
                 ChangeGameState(EGameStates.RoundOver);
+                GanasteElNivel();
             }
         }
 
