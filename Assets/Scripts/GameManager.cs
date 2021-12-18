@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public Transform derechaBajo;
     public Transform izquierdaBajo;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     private float[] samples = new float[512];
     private float[] frequencyBand = new float[8];
     private float[] frecuencyForSpawn = new float[6];
@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
     public GameObject capa2;
     public float songDelay;
     public AudioSource audioCamara;
+    public GameObject UISelector;
 
     public Animator Animator;
     
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour
     {
         ChangeGameState(EGameStates.Waiting);
         puntajeMaximo = 0;
+        UISelector.SetActive(true);
     }
 
     void GetAudioSamples()
@@ -253,7 +255,12 @@ public class GameManager : MonoBehaviour
     {
         GetAudioSamples();
         MakeFrequencyBands();
-
+        
+        if(audioSource.clip != null)
+        {
+            UISelector.SetActive(false);
+        }
+        
         if (bOnGameplay == true)
         {
             timer += Time.deltaTime;

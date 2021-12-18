@@ -11,7 +11,7 @@ public class Blanco : MonoBehaviour
 
     public bool bCanMove;
 
-    public GameObject prefabComplemento;
+    public GameObject[] prefabComplemento;
     public GameObject complemento;
     public Complemento complementoScript;
 
@@ -39,7 +39,7 @@ public class Blanco : MonoBehaviour
 
     public void AnnadirComplemento()
     {
-        complemento = Instantiate(prefabComplemento, (transform.position + new Vector3(0,0,-0.2f)), Quaternion.identity);
+        complemento = Instantiate(prefabComplemento[Random.Range(0,prefabComplemento.Length)], (transform.position + new Vector3(0,0,-0.2f)), Quaternion.identity);
         complemento.transform.parent = gameObject.transform;
     }
 

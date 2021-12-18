@@ -19,7 +19,7 @@ public class SongSelector : MonoBehaviour
         for (int i = 0; i < canciones.Length; i++)
         {
             GameObject obj = Instantiate(botonPrefab, transform);
-            obj.GetComponent<UISongButton>()?.Initialece(i,canciones[i].name);
+            obj.GetComponent<UISongButton>()?.Initialece(i,canciones[i].name,canciones[i]);
         }
     }
 }
