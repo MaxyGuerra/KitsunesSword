@@ -271,6 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 1
   thisScene: 0
+  bHaveAnim: 0
+  Puertas: {fileID: 0}
 --- !u!1 &712444873
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +731,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 1
   thisScene: 0
+  bHaveAnim: 0
+  Puertas: {fileID: 0}
 --- !u!1 &1213649887
 GameObject:
   m_ObjectHideFlags: 0

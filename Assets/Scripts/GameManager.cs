@@ -265,7 +265,7 @@ public class GameManager : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            delayForSpawn = Random.Range((spawnDelay-0.5f),(spawnDelay+0.5f));
+            delayForSpawn = Random.Range((spawnDelay-0.5f),(spawnDelay+2f));
 
             if (timer >= delayForSpawn)
             {
