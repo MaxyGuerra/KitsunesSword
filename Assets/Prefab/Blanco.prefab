@@ -63,6 +63,7 @@ MonoBehaviour:
   prefabComplemento:
   - {fileID: 4480554923276843676, guid: 246754c5e810a8749830b5d7ac6ef6a0, type: 3}
   - {fileID: 4480554923276843676, guid: 4b15858d139b60146af7cd3434b595f7, type: 3}
+  - {fileID: 544050613331575257, guid: da1c377f076f00448b5ecb2f1f034e1a, type: 3}
   complemento: {fileID: 0}
   complementoScript: {fileID: 0}
 --- !u!1001 &4591472378295237916

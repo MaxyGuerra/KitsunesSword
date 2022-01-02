@@ -64,6 +64,7 @@ public class DefensaPoints : MonoBehaviour
         if (other.CompareTag("Blancos"))
         {
             vida = vida - 0.2f;
+            combo = 0;
             Destroy(other.gameObject);
         }
     }
@@ -144,7 +145,7 @@ public class DefensaPoints : MonoBehaviour
         textPuntaje.SetText("Puntaje: "+ puntaje);
         textCombo.SetText("Combo x"+ combo);
 
-        if(vida <= 0)
+        if(vida < 0.2f)
         {
             GameManager.Instance.ChangeGameState(EGameStates.Gameover);
         }
