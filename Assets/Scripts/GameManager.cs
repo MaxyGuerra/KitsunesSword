@@ -238,7 +238,7 @@ public class GameManager : MonoBehaviour
 
     void GanasteElNivel()
     {
-        puntajeMaximoUI.SetText(defensaPoints.puntaje+"/"+(puntajeMaximo-1));
+        puntajeMaximoUI.SetText("Aciertos "+defensaPoints.puntaje+"/"+(puntajeMaximo-1));
         if(defensaPoints.puntaje >= ((puntajeMaximo-1)/3))
         {
             capa1.SetActive(true);

@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 104694354}
   - component: {fileID: 104694356}
   - component: {fileID: 104694355}
+  - component: {fileID: 104694357}
   m_Layer: 5
   m_Name: UIVictoria
   m_TagString: Untagged
@@ -429,6 +430,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104694353}
   m_CullTransparentMesh: 1
+--- !u!95 &104694357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104694353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04ecc3104d35f744db17d0f5b5e8d4a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &119252733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,8 +1509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 3
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &254016863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,8 +1805,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 3
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &286757679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,8 +3353,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &788307186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5142,8 +5156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1390481044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5292,8 +5304,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 1
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1428451048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6755,8 +6765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 3
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1912535335
 MonoBehaviour:
   m_ObjectHideFlags: 0

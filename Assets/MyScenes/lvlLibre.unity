@@ -2030,8 +2030,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 4
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &512934748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,8 +2452,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &694340936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,6 +3446,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8efe73dcf5ca4f743920b29ec5f8ea52, type: 3}
   - {fileID: 8300000, guid: a3104a64a1762ff48a1479a9e4e9506f, type: 3}
   - {fileID: 8300000, guid: b3488c24120eacc4db241d5cb10e1ccd, type: 3}
+  - {fileID: 8300000, guid: 17fb6492f5b94554483ea1113038f583, type: 3}
   botonPrefab: {fileID: 640370924069242307, guid: eb3d90105728b3649b75a88f268968b4, type: 3}
 --- !u!222 &1059305941
 CanvasRenderer:
@@ -4515,8 +4512,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1284590880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6634,8 +6629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 4
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1659703821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7237,8 +7230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1769829750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8318,6 +8309,7 @@ GameObject:
   - component: {fileID: 1998137356}
   - component: {fileID: 1998137358}
   - component: {fileID: 1998137357}
+  - component: {fileID: 1998137359}
   m_Layer: 5
   m_Name: UIVictoria
   m_TagString: Untagged
@@ -8387,6 +8379,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998137355}
   m_CullTransparentMesh: 1
+--- !u!95 &1998137359
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998137355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04ecc3104d35f744db17d0f5b5e8d4a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2005466802
 GameObject:
   m_ObjectHideFlags: 0
@@ -8441,8 +8452,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 4
   thisScene: 4
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &2005466805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14526,67 +14535,6 @@ Transform:
   m_Father: {fileID: 4963268751145468807}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7961909920676655094
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8078011327726825409, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_Name
-      value: Bandidos
-      objectReference: {fileID: 0}
-    - target: {fileID: 8078011327726825409, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.486
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885896924944495995, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4f48efb69041e784e891168c43c3a902, type: 3}
 --- !u!1 &8007551930262685950
 GameObject:
   m_ObjectHideFlags: 0

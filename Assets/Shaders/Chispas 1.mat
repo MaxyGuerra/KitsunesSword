@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chispas
+  m_Name: Chispas 1
   m_Shader: {fileID: -6465566751694194690, guid: f984aa334ddd01e4eb738e14a7da8efe, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -105,7 +105,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - Color_660de6b583ed430f806644a9e5d92c5e: {r: 1, g: 0.21120514, b: 0, a: 0}
+    - Color_660de6b583ed430f806644a9e5d92c5e: {r: 0, g: 0.12823725, b: 1, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
