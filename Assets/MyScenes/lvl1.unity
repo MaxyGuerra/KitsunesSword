@@ -4565,7 +4565,7 @@ MonoBehaviour:
   izquierdaBajo: {fileID: 1691915282}
   audioSource: {fileID: 0}
   spawnDelay: 2
-  PrefabBlanco: {fileID: 3116873282094555975, guid: a166cff1b4bba9f49a1e972998736956, type: 3}
+  PrefabBlanco: {fileID: 3116873282094555975, guid: 013e7f505d3fb8142ae0dbad2397d147, type: 3}
   velocidadBlancos: 1
   puntajeMaximo: 0
   defensaPoints: {fileID: 758826987894776581}

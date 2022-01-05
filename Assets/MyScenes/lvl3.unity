@@ -1507,8 +1507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e7cb8002509ba4084c96d4987949af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 3
-  thisScene: 3
+  nextScene: 4
+  thisScene: 4
 --- !u!114 &254016863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,8 +1803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e7cb8002509ba4084c96d4987949af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 3
-  thisScene: 3
+  nextScene: 4
+  thisScene: 4
 --- !u!114 &286757679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,7 +3426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 0
-  thisScene: 3
+  thisScene: 4
 --- !u!114 &788307186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4140,7 +4140,7 @@ MonoBehaviour:
   izquierdaBajo: {fileID: 1691915282}
   audioSource: {fileID: 0}
   spawnDelay: 1
-  PrefabBlanco: {fileID: 3116873282094555975, guid: a166cff1b4bba9f49a1e972998736956, type: 3}
+  PrefabBlanco: {fileID: 3116873282094555975, guid: 3d09046f1d686db49983fb313fc94393, type: 3}
   velocidadBlancos: 2
   puntajeMaximo: 0
   defensaPoints: {fileID: 758826987894776581}
@@ -5046,7 +5046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 0
-  thisScene: 3
+  thisScene: 4
 --- !u!114 &1390481044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5194,7 +5194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 1
-  thisScene: 3
+  thisScene: 4
 --- !u!114 &1428451048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6816,7 +6816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 0
-  thisScene: 3
+  thisScene: 4
 --- !u!114 &1912535335
 MonoBehaviour:
   m_ObjectHideFlags: 0

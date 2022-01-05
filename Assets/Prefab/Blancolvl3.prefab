@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3116873282094555974}
   - component: {fileID: 8138681925210174738}
   m_Layer: 0
-  m_Name: Blanco
+  m_Name: Blancolvl3
   m_TagString: Blancos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,8 +61,6 @@ MonoBehaviour:
   velocidad: 0
   bCanMove: 0
   prefabComplemento:
-  - {fileID: 4480554923276843676, guid: 246754c5e810a8749830b5d7ac6ef6a0, type: 3}
-  - {fileID: 3874094582139670657, guid: 4b15858d139b60146af7cd3434b595f7, type: 3}
   - {fileID: 544050613331575257, guid: da1c377f076f00448b5ecb2f1f034e1a, type: 3}
   complemento: {fileID: 0}
   complementoScript: {fileID: 0}

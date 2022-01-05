@@ -271,8 +271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 2
   thisScene: 1
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!1 &712444873
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,8 +729,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   thisScene: 1
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!1 &1213649887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,10 +1295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e7cb8002509ba4084c96d4987949af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 4
+  nextScene: 5
   thisScene: 1
-  bHaveAnim: 0
-  Puertas: {fileID: 0}
 --- !u!114 &1976722853
 MonoBehaviour:
   m_ObjectHideFlags: 0
